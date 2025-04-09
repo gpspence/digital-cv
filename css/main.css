@@ -183,6 +183,11 @@ p {
     text-decoration: none;
 }
 
+.contact-links:visited {
+    color: #575757;
+    text-decoration: none;
+}
+
 
 /* Media Queries */
 /* Hide the URL part that appears after the link */
