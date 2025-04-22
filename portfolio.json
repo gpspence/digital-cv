@@ -10,10 +10,40 @@
     "base_url": "None",
     "work_experience": [
         {
-            "position":,
-            "company":,
-            "start_date":,
-            "end_date":,
+            "position": "Data Engineer",
+            "company": "Hexegic",
+            "start_date": "August 2024",
+            "end_date": "Present",
+            "experiences":[
+                "In the first 6 months, saved over 30 FTEs for the customer by automating repetitive dataset ingestion processes and producing front-end dashboards to support operational analysis and planning, leading to my promotion to deputy team lead.",
+                "Responsible for managing the technical business of the team, mentoring other team members and approving peer reviews.",
+                "Features deployed include: optimised data pipelines using PySpark and Pandas, complex relational ontologies to represent real world data models and responsive front-end applications using TypeScript.",
+                "Developed a data uploader library for processing multiple file types with varying schemas by implementing upload config versioning and custom data health checks."
+            ]
+        },
+        {
+            "position": "Senior Scientist",
+            "company": "Defence Science and Technology Laboratories - MOD",
+            "start_date": "May 2024",
+            "end_date": "July 2024",
+            "experiences":[
+                ""
+            ]
+        },
+        {
+            "position": "Scientist",
+            "company": "Defence Science and Technology Laboratories - MOD",
+            "start_date": "June 2022",
+            "end_date": "May 2024",
+            "experiences":[
+                ""
+            ]
+        },
+        {
+            "position": "Technical Assistant",
+            "company": "Charles River Laboratories",
+            "start_date": "July 2019",
+            "end_date": "June 2020",
             "experiences":[
                 ""
             ]
