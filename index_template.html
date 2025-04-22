@@ -18,9 +18,6 @@
     <!-- Open Graph Tags: The URL of the page, used to ensure link previews resolve to the correct page. -->
     <meta property="og:url" content="{{ base_url }}/resume.html">
 
-    <!-- Open Graph Tags: URL of an image that represents the page. Useful for link previews. -->
-    <meta property="og:image" content="{{ base_url }}/{{ image_path }}">
-
     <!-- Open Graph Tags: Provides an alternative text for the image to improve accessibility. -->
     <meta property="og:image:alt" content="{{ name }} Profile Image">
 
@@ -91,7 +88,7 @@
                     <ul class="sidebar-list">
                         {% if contact.email %}
                         <li>
-                            <a href="mailto:spence.jobs@pm.me"
+                            <a href="mailto:{{ contact.email }}">
                             class="contact-links link-and-icon">
                                 <svg aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -103,13 +100,13 @@
                                 viewBox="0 0 800 800">
                                     <path d="M 798.04,172.44 C 794.72,155.64 787.22,139.75 776.28,126.40 774.06,123.60 771.74,121.11 769.20,118.58 749.74,99.01 722.67,87.79 694.93,87.79 694.93,87.79 105.07,87.79 105.07,87.79 77.02,87.79 50.64,98.73 30.79,118.59 28.28,121.09 25.95,123.61 23.64,126.50 12.75,139.80 5.29,155.66 2.04,172.49 0.68,179.09 0.00,185.94 0.00,192.87 0.00,192.87 0.00,607.14 0.00,607.14 0.00,621.56 2.93,635.59 8.73,648.93 13.76,660.78 21.38,672.01 30.78,681.41 33.15,683.77 35.50,685.95 38.02,688.07 56.82,703.64 80.63,712.21 105.07,712.21 105.07,712.21 694.93,712.21 694.93,712.21 719.53,712.21 743.31,703.61 762.06,687.90 764.57,685.87 766.89,683.74 769.22,681.41 778.31,672.33 785.53,661.90 790.73,650.39 790.73,650.39 791.41,648.75 791.41,648.75 797.11,635.66 800.00,621.67 800.00,607.15 800.00,607.15 800.00,192.87 800.00,192.87 800.00,186.03 799.34,179.14 798.04,172.44 Z M 54.41,154.85 C 55.90,152.68 57.79,150.44 60.21,148.00 72.23,136.00 88.16,129.39 105.07,129.39 105.07,129.39 694.93,129.39 694.93,129.39 711.98,129.39 727.92,136.01 739.80,148.03 741.85,150.10 743.81,152.40 745.52,154.70 745.52,154.70 750.03,160.76 750.03,160.76 750.03,160.76 435.19,435.16 435.19,435.16 425.48,443.67 412.98,448.36 400.00,448.36 387.13,448.36 374.65,443.68 364.83,435.18 364.83,435.18 50.30,160.84 50.30,160.84 50.30,160.84 54.41,154.85 54.41,154.85 Z M 41.80,610.80 C 41.63,609.67 41.60,608.42 41.60,607.14 41.60,607.14 41.60,201.45 41.60,201.45 41.60,201.45 285.92,414.59 285.92,414.59 285.92,414.59 44.06,625.46 44.06,625.46 44.06,625.46 41.80,610.80 41.80,610.80 Z M 726.40,662.25 C 716.95,667.71 706.06,670.60 694.93,670.60 694.93,670.60 105.07,670.60 105.07,670.60 93.93,670.60 83.05,667.71 73.60,662.25 73.60,662.25 63.71,656.52 63.71,656.52 63.71,656.52 313.61,438.74 313.61,438.74 313.61,438.74 341.00,462.56 341.00,462.56 357.43,476.82 378.38,484.69 400.00,484.69 421.70,484.69 442.69,476.82 459.10,462.56 459.10,462.56 486.48,438.73 486.48,438.73 486.48,438.73 736.29,656.53 736.29,656.53 736.29,656.53 726.40,662.25 726.40,662.25 Z M 758.39,607.14 C 758.39,608.40 758.37,609.64 758.21,610.74 758.21,610.74 756.05,625.54 756.05,625.54 756.05,625.54 514.08,414.70 514.08,414.70 514.08,414.70 758.39,201.55 758.39,201.55 758.39,201.55 758.39,607.14 758.39,607.14 Z" />
                                 </svg>
-                            spence.jobs@pm.me
+                            {{ contact.email }}
                             </a>
                         </li>
                         {% endif %}
                         {% if contact.linkedin %}
                         <li>
-                            <a href="https://www.linkedin.com/in/george-spence/"
+                            <a href="{{ contact.linkedin }}"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
                                 class="contact-links link-and-icon">
@@ -123,13 +120,13 @@
                                 viewBox="0 0 16 16">
                                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                                 </svg>
-                                linkedin.com/in/george-spence
+                                {{ contact.linkedin }}
                             </a> 
                         </li>
                         {% endif %}
                         {% if contact.github %}
                         <li>
-                            <a href="https://github.com/gpspence"
+                            <a href="{{ contact.github }}"
                                 rel="noopener noreferrer"
                                 aria-label="GitHub"
                                 class="contact-links link-and-icon">
@@ -143,7 +140,7 @@
                                 viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                             </svg>
-                            github.com/george-spence
+                            {{ contact.github }}
                             </a>
                         </li>
                         {% endif %}
@@ -163,46 +160,58 @@
                                 viewBox="0 0 800 800">
                                     <path d="M 400.00,375.00 C 358.58,375.00 325.00,341.43 325.00,300.00 325.00,258.58 358.58,225.00 400.00,225.00 441.42,225.00 475.00,258.58 475.00,300.00 475.00,341.43 441.42,375.00 400.00,375.00 400.00,375.00 400.00,375.00 400.00,375.00 Z M 400.00,175.00 C 330.98,175.00 275.00,230.95 275.00,300.00 275.00,369.05 330.98,425.00 400.00,425.00 469.03,425.00 525.00,369.05 525.00,300.00 525.00,230.95 469.03,175.00 400.00,175.00 400.00,175.00 400.00,175.00 400.00,175.00 Z M 400.00,725.00 C 358.43,725.23 150.00,404.52 150.00,300.00 150.00,161.95 261.93,50.00 400.00,50.00 538.07,50.00 650.00,161.95 650.00,300.00 650.00,403.12 440.93,725.23 400.00,725.00 400.00,725.00 400.00,725.00 400.00,725.00 Z M 400.00,0.00 C 234.32,0.00 100.00,134.32 100.00,300.00 100.00,425.45 350.12,800.27 400.00,800.00 449.10,800.27 700.00,423.75 700.00,300.00 700.00,134.32 565.67,0.00 400.00,0.00 400.00,0.00 400.00,0.00 400.00,0.00 Z" />
                                 </svg>
-                                United Kingdom
+                                {{ contact.location }}
                             </a>
                         </li>
                         {% endif %}
                     </ul>
                 </section>
+                {% if software %}
                 <section class="bottom-border aside-container">
                     <h4>Software</h4>
                     <div>
+                        {% if software.languages %}
                         <h5 class="">Languages</h5>
                         <ul class="sidebar-list">
-                            <li>Python</li>
-                            <li>TypeScript | JavaScript</li>
-                            <li>HTML | CSS</li>
-                            <li>Bash</li>
-                            <li>SQL</li>
+                            {% for language in software.languages %}
+                            <li>{{ language }}</li>
+                            {% endfor %}
                         </ul>
+                        {% endif %}
+                        {% if software.workflows %}
                         <h5>Workflows</h5>
                         <ul class="sidebar-list">
-                            <li>Git | GitHub | BitBucket</li>
-                            <li>KANBAN | Jira</li>
-                            <li>VSCode | Vim | PyCharm</li>
-                            <li>Windows | Linux</li>
+                            {% for workflow in software.workflows %}
+                            <li>{{ workflow }}</li>
+                            {% endfor %}
                         </ul>
+                        {% endif %}
                     </div>
                 </section>
+                { % endif %}
+                {% if education %}
                 <section class="aside-container">
                     <h4>Education</h4>
                     <div>
-                        <h5>MChem(Hons) Chemistry with Industrial Placement</h5>
-                        <p><em><strong>First Class Honours - University of Bath (2017 - 2021)</strong></em></p>
-                        <p>Master’s project: Synthesis of a 
-                            water-soluble copper(II) complex to detect reactive 
-                            nitrogen species.</p>
+                        {% if education.degree %}
+                        <h5>{{ education.degree }}</h5>
+                        <p><em><strong>{{ education.degree_result }} - {{education.university}} 
+                            ({{ education.degree_start_date }} - {{ education.degree_end_date }})</strong></em></p>
+                        {% if education.masters_project %}
+                        <p>Master’s project: {{ education.masters_project }}</p>
+                        {% endif %}
+                        {% endif %
+                        {% if education.alevels %}}
                         <h5>A Levels</h5>
-                        <p>Biology A* | Chemistry A | Maths A</p>
+                        <p>{{ education.alevels|join(" | ") }}</p>
+                        {% endif %}
+                        {% if education.gcses %}
                         <h5>GCSEs</h5>
-                        <p>9A*s, 2As</p>
+                        <p>{{ education.gcses }}</p>
+                        {% endif %}
                     </div>
                 </section>
+                {% endif %}
             </div>
         </aside>
     </div>

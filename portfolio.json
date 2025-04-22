@@ -1,3 +1,51 @@
 {
-    "name": "George Spence"
+    "name": "George Spence",
+    "contact": {
+        "email": "spence.jobs@pm.me",
+        "linkedin": "https://www.linkedin.com/in/george-spence/",
+        "github": "https://github.com/gpspence",
+        "location": "UK"
+    },
+    "summary": "George Spence - Data Engineer @ Hexegic | MChem(Hons)",
+    "base_url": "None",
+    "work_experience": [
+        {
+            "position":,
+            "company":,
+            "start_date":,
+            "end_date":,
+            "experiences":[
+                ""
+            ]
+        }
+    ],
+    "software": {
+        "languages": [
+            "Python",
+            "TypeScript | JavaScript",
+            "HTML | CSS",
+            "Bash",
+            "SQL"
+        ],
+        "workflows": [
+            "Git | GitHub | BitBucket",
+            "KANBAN | Jira",
+            "VSCode | Vim | PyCharm",
+            "Windows | Linux"
+        ]
+    },
+    "education": {
+        "degree": "MChem(Hons) Chemistry with Industrial Placement",
+        "degree_result": "First Class Honours",
+        "university": "University of Bath",
+        "degree_start_date": 2017,
+        "degree_end_date": 2021,
+        "masters_project": "Synthesis of a water-soluble copper(II) complex to detect reactive nitrogen species.",
+        "alevels": [
+            "Biology A*",
+            "Chemistry A",
+            "Maths A"
+        ],
+        "gcses": "9A*s, 2As"
+    }
 }
