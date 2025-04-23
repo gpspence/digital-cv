@@ -27,7 +27,9 @@
             "start_date": "May 2024",
             "end_date": "July 2024",
             "experiences":[
-                ""
+                "Shaped requirements and managed international extra-mural project with US research lab to evaluate chemical sensor performance for UK government.",
+                "Worked on robotics and autonomy research including supporting large scale trials and workshops, drafting funding proposals and completing fundamental research.",
+                "Authored technical reports and presentations to advise MOD decision-making."
             ]
         },
         {
@@ -36,7 +38,9 @@
             "start_date": "June 2022",
             "end_date": "May 2024",
             "experiences":[
-                ""
+                "Proactive in challenging conventions; developed cutting-edge test and evaluation systems, including hardware, SCADA/HMI software, Python tools and ML models, to characterise chemical sensors for UK MOD procurement.",
+                "Completed data processing and visualisation for chemical sensor analysis, to generate impactful insights for stakeholders.",
+                "Delivered training to military delegates, communicating specialist CBRN knowledge and supporting ttraining scenarios in operationally relevant contexts."
             ]
         },
         {
@@ -45,7 +49,8 @@
             "start_date": "July 2019",
             "end_date": "June 2020",
             "experiences":[
-                ""
+                "Worked on three pharmaceutical research projects with both external and in house clients for a global contract research organisation.",
+                "Was responsible for the chemical synthesis of a novel series of antibiotic candidates and achieved a 50-fold increase in biochemical potency of the drug candidate."
             ]
         }
     ],
@@ -61,7 +66,7 @@
             "Git | GitHub | BitBucket",
             "KANBAN | Jira",
             "VSCode | Vim | PyCharm",
-            "Windows | Linux"
+            "Linux"
         ]
     },
     "education": {
