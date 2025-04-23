@@ -3,7 +3,9 @@
     "contact": {
         "email": "spence.jobs@pm.me",
         "linkedin": "https://www.linkedin.com/in/george-spence/",
+        "linkedin_display": "linkedin.com/in/george-spence",
         "github": "https://github.com/gpspence",
+        "github_display": "github.com/george-spence",
         "location": "UK"
     },
     "summary": "George Spence - Data Engineer @ Hexegic | MChem(Hons)",
