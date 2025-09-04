@@ -50,10 +50,7 @@
             "company": "Charles River Laboratories",
             "start_date": "July 2019",
             "end_date": "June 2020",
-            "experiences":[
-                "Worked on three pharmaceutical research projects with both external and in house clients for a global contract research organisation.",
-                "Was responsible for the chemical synthesis of a novel series of antibiotic candidates and achieved a 50-fold increase in biochemical potency of the drug candidate."
-            ]
+            "experiences":[]
         }
     ],
     "software": {

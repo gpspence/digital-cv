@@ -1,4 +1,4 @@
-#!/home/george/Code/HTML_CSS/eCV/.venv/bin/python3
+#!/home/george/Code/HTML_CSS/eCV/.venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
