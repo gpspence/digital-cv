@@ -135,7 +135,7 @@ p {
     justify-content: space-between;
 }
 
-.job-company {
+.job-role {
     text-align: left;
     font-size: 0.75rem;
     font-style: italic;
@@ -160,21 +160,31 @@ p {
     list-style: none;
 }
 
+.sidebar-list li {
+    display: flex;
+    gap: 0.3rem;
+    margin-left: 0;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-list-software {
+    font-size: 0.75rem;
+    padding-left: 0.3rem;
+    color: #414040;
+    list-style: none;
+}
+
+.sidebar-list-software li {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.25rem;
+    margin-left: 0;
+}
+
 .link-and-icon {
     display: flex;
     gap: 0.3rem;
     margin-bottom: 0.3rem;
-}
-
-.sidebar-list li {
-    display: flex;
-    gap: 0.3rem;
-    margin-bottom: 0.1rem;
-    margin-left: 0;
-}
-
-.software-list li{
-    margin-bottom: 0.25rem;
 }
 
 .aside-container {
