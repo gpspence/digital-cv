@@ -13,9 +13,13 @@
     "work_experience": [
         {
             "company": "Hexegic",
-            "position": "Data Engineer",
-            "start_date": "August 2024",
-            "end_date": "Present",
+            "positions": [
+                {
+                    "role": "Data Engineer",
+                    "start_date": "August 2024",
+                    "end_date": "Present"
+                }
+            ],
             "experiences": [
                 "In the first 6 months, saved over 30 FTEs for the customer by automating repetitive dataset ingestion processes and producing front-end dashboards to support operational analysis and planning, leading to my promotion to deputy team lead.",
                 "Responsible for managing the technical business of the team, mentoring other team members and approving peer reviews.",
