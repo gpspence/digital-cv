@@ -16,37 +16,35 @@
             "positions": [
                 {
                     "role": "Data Engineer",
+                    "skills": [],
                     "start_date": "August 2024",
                     "end_date": "Present"
                 }
             ],
             "experiences": [
-                "In the first 6 months, saved over 30 FTEs for the customer by automating repetitive dataset ingestion processes and producing front-end dashboards to support operational analysis and planning, leading to my promotion to deputy team lead.",
-                "Responsible for managing the technical business of the team, mentoring other team members and approving peer reviews.",
-                "Features deployed include: optimised data pipelines using PySpark and Pandas, complex relational ontologies to represent real world data models and responsive front-end applications using TypeScript.",
-                "Developed a data uploader library for processing multiple file types with varying schemas by implementing upload config versioning and custom data health checks."
+                "Automated large-scale data ingestion pipelines using PySpark on Palantir Foundry, processing 100+ GB of structured and semi-structured data daily.",
+                "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentor junior engineers and lead code reviews to ensure best practices and maintain quality and consistency.",
+                "Built a custom Python ETL library to standardise ingestion of 15+ disparate data sources, with support for schema variation, config versioning, and custom data health checks.",
+                "Led recovery of a failing project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence.",
+                "Modelled complex relational ontologies to represent real-world data relationships and enable cross-domain analytics.",
+                "Developed responsive operational dashboards using TypeScript within Palantir Foundry, delivering real-time insights for decision-making."
             ]
         },
         {
             "company": "Defence Science and Technology Laboratories - MOD",
             "positions": [
                 {
-                    "role": "Senior Scientist",
-                    "start_date": "May 2024",
-                    "end_date": "July 2024"
-                },
-                {
-                    "role": "Scientist",
+                    "role": "Scientist (Promoted to Senior Scientist)",
+                    "skills": [],
                     "start_date": "June 2022",
-                    "end_date": "May 2024"
+                    "end_date": "July 2024"
                 }
             ],
             "experiences": [
-                "Shaped requirements and managed international extra-mural project with US research lab to evaluate chemical sensor performance for UK government.",
-                "Worked on robotics and autonomy research including supporting large scale trials and workshops, drafting funding proposals and completing fundamental research.",
-                "Developed cutting-edge test and evaluation systems, including hardware and SCADA/HMI software to characterise chemical sensors for UK MOD procurement.",
-                "Processing and visualised data in Python (Pandas, Matplotlib) for chemical sensor analysis, to generate impactful insights for stakeholders.",
-                "Delivered training to military delegates, communicating specialist CBRN knowledge and supporting training scenarios in operationally relevant contexts."
+                "Developed data acquisition and HMI/SCADA systems in DAQFactory, leveraging Python (Pandas, Matplotlib) to characterise chemical sensors for UK MOD procurement.",
+                "Managed an international collaboration with a US research lab to evaluate chemical sensor performance for UK MOD procurement.",
+                "Supported robotics and autonomy research, including data analysis for large scale trials, presenting at workshops, and drafting funding proposals.",
+                "Delivered technical training to stakeholders, simplifying complex topics for diverse audiences."
             ]
         },
         {
@@ -54,30 +52,25 @@
             "positions": [
                 {
                     "role": "Technical Assistant",
+                    "skills": [],
                     "start_date": "July 2019",
                     "end_date": "June 2020"
                 }
             ],
             "experiences": [
-                "Worked on three pharmaceutical research projects with both external and in house clients for a global contract research organisation.",
-                "Was responsible for the chemical synthesis of a novel series of antibiotic candidates and achieved a 50-fold increase in biochemical potency of the drug candidate."
+                "Conducted chemical synthesis and analysis (HPLC, NMR) for pharmaceutical research projects, directly contributing to a 50-fold increase in biochemical potency of a novel antibiotic drug candidate."
             ]
         }
     ],
-    "software": {
-        "languages": [
-            "Python, TypeScript/ JavaScript, SQL"
-        ],
-        "data_engineering": [
-            "PySpark, Pandas, Data Pipelines, ETL, Data Modelling"
-        ],
-        "tools": [
-            "Palantir Foundry, Git, Supabase"
-        ],
-        "web_dev": [
-            "React, HTML, CSS, REST APIs"
-        ]
-    },
+    "projects": [
+        {
+            "name": "Recipe Manager (Full-Stack App)",
+            "points": [
+                "Built a full-stack meal planner application with a React (Vite) frontend and a Supabase/ PostgreSQL backend, featuring full CRUD, authentication and API-driven state management.",
+                "Demonstrated skills: React, TypeScript, SQL, REST APIs, Vercel, Supabase."
+            ]
+        }
+    ],
     "education": {
         "degree": "MChem(Hons) Chemistry with Industrial Placement",
         "degree_result": "First Class Honours",
