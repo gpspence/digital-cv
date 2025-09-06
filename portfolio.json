@@ -49,7 +49,7 @@
             "company": "Hexegic",
             "positions": [
                 {
-                    "role": "Data Engineer (Sub-team Lead)",
+                    "role": "Data Engineer (Promoted to Sub-team Lead)",
                     "start_date": "August 2024",
                     "end_date": "Present"
                 }
@@ -67,13 +67,13 @@
             "company": "Defence Science and Technology Laboratories - MOD",
             "positions": [
                 {
-                    "role": "Scientist – Senior Scientist",
+                    "role": "Scientist (Promoted to Senior Scientist)",
                     "start_date": "June 2022",
                     "end_date": "July 2024"
                 }
             ],
             "experiences": [
-                "Developed data acquisition and HMI/SCADA systems in DAQFactory, leveraging Python (Pandas, Matplotlib) to characterise chemical sensors for UK MOD procurement.",
+                "Developed data acquisition and HMI/SCADA systems in DAQFactory, leveraging Python (Pandas, Matplotlib) to characterise chemical sensors.",
                 "Managed an international collaboration with a US research lab to evaluate chemical sensor performance for UK MOD procurement.",
                 "Supported robotics and autonomy research, including data analysis for large scale trials, presenting at workshops, and drafting funding proposals."
             ]
