@@ -25,7 +25,7 @@
                 "Automated large-scale data ingestion pipelines using PySpark on Palantir Foundry, processing 100+ GB of structured and semi-structured data daily.",
                 "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentor junior engineers and lead code reviews to ensure best practices and maintain quality and consistency.",
                 "Built a custom Python ETL library to standardise ingestion of 15+ disparate data sources, with support for schema variation, config versioning, and custom data health checks.",
-                "Led recovery of a failing project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence.",
+                "Led recovery of a challenging project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence.",
                 "Modelled complex relational ontologies to represent real-world data relationships and enable cross-domain analytics.",
                 "Developed responsive operational dashboards using TypeScript within Palantir Foundry, delivering real-time insights for decision-making."
             ]
@@ -66,8 +66,9 @@
         {
             "name": "Recipe Manager (Full-Stack App)",
             "points": [
-                "Built a full-stack meal planner application with a React (Vite) frontend and a Supabase/ PostgreSQL backend, featuring full CRUD, authentication and API-driven state management.",
-                "Demonstrated skills: React, TypeScript, SQL, REST APIs, Vercel, Supabase."
+                "Full-stack: React (Vite) + Supabase/ PostgreSQL",
+                "Features: Auth, CRUD, API integration",
+                "Deployed via Vercel"
             ]
         }
     ],

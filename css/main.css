@@ -132,20 +132,17 @@ p {
 
 .job-tagline {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0.25rem 0rem;
 }
 
-.job-role {
-    text-align: left;
+.job-details {
     font-size: 0.75rem;
     font-style: italic;
 }
 
-.job-date {
-    text-align: right;
-    font-size: 0.75rem;
-    font-style: italic;
+.no-italics {
+    font-style: normal;
 }
 
 .experience-list {
@@ -168,17 +165,17 @@ p {
     margin-bottom: 0.25rem;
 }
 
-.sidebar-list-software {
+.sidebar-list-projects {
     font-size: 0.75rem;
     padding-left: 0.3rem;
     color: #414040;
     list-style: none;
 }
 
-.sidebar-list-software li {
+.sidebar-list-projects li {
     display: flex;
     gap: 0.4rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
     margin-left: 0;
 }
 
@@ -189,7 +186,7 @@ p {
 }
 
 .aside-container {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
 }
 
 .contact-links:link {

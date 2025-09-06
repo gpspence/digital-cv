@@ -63,8 +63,11 @@
                             <h5>{{ job.company }}</h5>
                             {% for position in job.positions %}
                             <div class="job-tagline">
-                                <span class="job-role">{{ position.role }}</span>
-                                <span class="job-date">{{ position.start_date }} - {{ position.end_date }}</span>
+                                <span class="job-details">
+                                    {{ position.role }}
+                                    <span class="no-italics"> | </span>
+                                    {{ position.start_date }} - {{ position.end_date }}
+                                </span>
                             </div>
                             {% endfor %}
                             {% if job.experiences %}
@@ -141,6 +144,19 @@
                         </li>
                         {% endif %}
                     </ul>
+                </section>
+                {% endif %}
+                {% if projects %}
+                <section class="bottom-border aside-container">
+                    <h4>Projects</h4>
+                    {% for project in projects %}
+                    <h5 class="sidebar-list-projects">{{ project.name }}</h5>
+                        <ul class="sidebar-list-projects">
+                            {% for point in project.points %}
+                            <li>{{ point }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
                 </section>
                 {% endif %}
                 {% if software %}
