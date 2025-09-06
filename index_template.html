@@ -155,11 +155,27 @@
                             {% endfor %}
                         </ul>
                         {% endif %}
+                        {% if software.data_engineering %}
+                        <h5>Data Engineering</h5>
+                        <ul class="sidebar-list-software">
+                            {% for skill in software.data_engineering %}
+                            <li>{{ skill }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
                         {% if software.tools %}
-                        <h5>Development & Infrastructure</h5>
+                        <h5>Platforms & Tools</h5>
                         <ul class="sidebar-list-software">
                             {% for tool in software.tools %}
                             <li>{{ tool }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if software.web_dev %}
+                        <h5>Web Development</h5>
+                        <ul class="sidebar-list-software">
+                            {% for skill in software.web_dev %}
+                            <li>{{ skill }}</li>
                             {% endfor %}
                         </ul>
                         {% endif %}

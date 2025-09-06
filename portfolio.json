@@ -66,16 +66,16 @@
     ],
     "software": {
         "languages": [
-            "Python (PySpark, Pandas, Numpy, Matplotlib, scikit-learn, pytest)",
-            "SQL (Postgres)",
-            "TypeScript (React, Jest)",
-            "HTML | CSS (Tailwind)",
-            "Bash"
+            "Python, TypeScript/ JavaScript, SQL"
+        ],
+        "data_engineering": [
+            "PySpark, Pandas, Data Pipelines, ETL, Data Modelling"
         ],
         "tools": [
-            "Git | GitHub | BitBucket",
-            "KANBAN | Jira",
-            "Linux"
+            "Palantir Foundry, Git, Supabase"
+        ],
+        "web_dev": [
+            "React, HTML, CSS, REST APIs"
         ]
     },
     "education": {

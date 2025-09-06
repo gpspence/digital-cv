@@ -178,7 +178,7 @@ p {
 .sidebar-list-software li {
     display: flex;
     gap: 0.4rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
     margin-left: 0;
 }
 
