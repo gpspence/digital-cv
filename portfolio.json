@@ -56,7 +56,7 @@
             ],
             "experiences": [
                 "Automated large-scale data ingestion pipelines using PySpark on Palantir Foundry, processing 100+ GB of structured and semi-structured data daily.",
-                "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentored 5 junior engineers and lead code reviews across a 5-person team to ensure best practices and maintain quality and consistency.",
+                "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentored 5 junior engineers and led code reviews across a 5-person team to ensure best practices and maintain quality and consistency.",
                 "Built a Python ETL library to standardise ingestion of 15+ disparate data sources, with support for schema changes via config versioning and data health checks.",
                 "Led recovery of a challenging project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence.",
                 "Modelled complex relational ontologies to represent real-world data relationships and enable cross-domain analytics.",
@@ -88,7 +88,7 @@
                 }
             ],
             "experiences": [
-                "Conducted chemical synthesis for pharmaceutical research projects, contributing to a 50-fold increase in biochemical potency of a novel antibiotic drug candidate."
+                "Conducted chemical synthesis for pharmaceutical research projects, leading to a 50-fold increase in biochemical potency of a novel antibiotic drug candidate."
             ]
         }
     ],
