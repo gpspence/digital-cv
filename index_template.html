@@ -38,10 +38,6 @@
     <link rel="stylesheet" href="css/html5bp.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- Favicon for all browsers -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-
     <!-- Content Security Policy: Uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like XSS). Update if adding external sources (e.g., Google Fonts, Bootstrap CDN, analytics, etc). -->
     <!-- <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; script-src 'self' code.jquery.com; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.examplecdn.com; "> -->
 </head>
@@ -54,6 +50,17 @@
     <div class="main-grid-container">
         <main>
             <div class="content-wrapper">
+                {% if technical_skills %}
+                <section>
+                    <h4>Technical Skills</h4>
+                    {% for category in technical_skills %}
+                    <p class="technical-skills">
+                        <strong>{{ category.display_name }}: </strong>
+                        {{category.skills|join(", ") }}
+                    </p>
+                    {% endfor %}
+                </section>
+                {% endif %}
                 {% if work_experience %}
                 <section>
                     <h4>Work Experience</h4>
@@ -63,10 +70,10 @@
                             <h5>{{ job.company }}</h5>
                             {% for position in job.positions %}
                             <div class="job-tagline">
-                                <span class="job-details">
+                                <span>
                                     {{ position.role }}
-                                    <span class="no-italics"> | </span>
-                                    {{ position.start_date }} - {{ position.end_date }}
+                                    <span class="separator">&nbsp;&middot;&nbsp;</span>
+                                    {{ position.start_date }} &ndash; {{ position.end_date }}
                                 </span>
                             </div>
                             {% endfor %}
@@ -91,7 +98,7 @@
                 {% if contact.email or contact.linkedin or contact.github or contact.location %}
                 <section class="bottom-border aside-container">
                     <h4>Contact</h4>
-                    <ul class="sidebar-list">
+                    <ul class="sidebar-list-contact">
                         {% if contact.email %}
                         <li>
                             <a href="mailto:{{ contact.email }}" class="contact-links link-and-icon">
@@ -151,51 +158,12 @@
                     <h4>Projects</h4>
                     {% for project in projects %}
                     <h5 class="sidebar-list-projects">{{ project.name }}</h5>
-                        <ul class="sidebar-list-projects">
-                            {% for point in project.points %}
-                            <li>{{ point }}</li>
-                            {% endfor %}
-                        </ul>
+                    <ul class="sidebar-list-projects">
+                        {% for point in project.points %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
                     {% endfor %}
-                </section>
-                {% endif %}
-                {% if software %}
-                <section class="bottom-border aside-container">
-                    <h4>Software</h4>
-                    <div>
-                        {% if software.languages %}
-                        <h5 class="">Languages</h5>
-                        <ul class="sidebar-list-software">
-                            {% for language in software.languages %}
-                            <li>{{ language }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                        {% if software.data_engineering %}
-                        <h5>Data Engineering</h5>
-                        <ul class="sidebar-list-software">
-                            {% for skill in software.data_engineering %}
-                            <li>{{ skill }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                        {% if software.tools %}
-                        <h5>Platforms & Tools</h5>
-                        <ul class="sidebar-list-software">
-                            {% for tool in software.tools %}
-                            <li>{{ tool }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                        {% if software.web_dev %}
-                        <h5>Web Development</h5>
-                        <ul class="sidebar-list-software">
-                            {% for skill in software.web_dev %}
-                            <li>{{ skill }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div>
                 </section>
                 {% endif %}
                 {% if education %}
@@ -203,21 +171,24 @@
                     <h4>Education</h4>
                     <div>
                         {% if education.degree %}
-                        <h5>{{ education.degree }}</h5>
-                        <p><em><strong>{{ education.degree_result }} - {{education.university}}
-                                    ({{ education.degree_start_date }} - {{ education.degree_end_date }})</strong></em>
+                        <h5 class="degree-title">{{ education.degree }}</h5>
+                        <p class="degree-text"><em>{{ education.degree_result }} - {{education.university}}
+                                ({{ education.degree_start_date }} - {{ education.degree_end_date }})</em>
                         </p>
                         {% if education.masters_project %}
                         <p>Master’s project: {{ education.masters_project }}</p>
                         {% endif %}
                         {% endif %}
                         {% if education.alevels %}
-                        <h5>A Levels</h5>
-                        <p>{{ education.alevels|join(" | ") }}</p>
+                        <span class="education-short">
+                            <p class="education-short"><strong>A Levels</strong>: {{ education.alevels|join(" | ") }}
+                            </p>
+                        </span>
                         {% endif %}
                         {% if education.gcses %}
-                        <h5>GCSEs</h5>
-                        <p>{{ education.gcses }}</p>
+                        <span class="education-short">
+                            <p class="education-short"><strong>GCSEs:</strong> {{ education.gcses }}</p>
+                        </span>
                         {% endif %}
                     </div>
                 </section>

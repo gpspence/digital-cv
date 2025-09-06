@@ -22,7 +22,7 @@ aside {
 
 main {
     order: 2;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.25rem;
 }
 
 footer {
@@ -49,8 +49,8 @@ h1 {
 }
 
 h5 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -130,35 +130,60 @@ p {
     padding-bottom: 0.4rem;
 }
 
-.job-tagline {
-    display: flex;
-    justify-content: flex-start;
+/* Technical Skills Classes*/
+.technical-skills {
     margin: 0.25rem 0rem;
 }
 
-.job-details {
+/* Job Tagline Classes*/
+.job-tagline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.25rem 0rem;
     font-size: 0.75rem;
     font-style: italic;
 }
 
-.no-italics {
+.job-skills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+    margin: 0.25rem 0rem 0.25rem 0.25rem;
+}
+
+.job-skills-badge {
+    border: 1px solid #a4a4a4;
+    border-radius: 25px;
+    padding: 0px 6px;
+    font-size: 0.7rem;
+    font-style: normal;
+    color: #616161;
+}
+
+.separator {
     font-style: normal;
 }
 
+/* Work Experience Classes*/
 .experience-list {
     font-size: 0.75rem;
     padding-left: 0.3rem;
     color: #414040;
+    margin-block-start: 0.5rem;
 }
 
-.sidebar-list {
+/* Aside Classes */
+.sidebar-list-contact {
     font-size: 0.75rem;
     padding-left: 0.3rem;
     color: #414040;
     list-style: none;
 }
 
-.sidebar-list li {
+.sidebar-list-contact li {
     display: flex;
     gap: 0.3rem;
     margin-left: 0;
@@ -167,7 +192,7 @@ p {
 
 .sidebar-list-projects {
     font-size: 0.75rem;
-    padding-left: 0.3rem;
+    padding: 0rem;
     color: #414040;
     list-style: none;
 }
@@ -177,6 +202,19 @@ p {
     gap: 0.4rem;
     margin-bottom: 0.25rem;
     margin-left: 0;
+}
+
+.degree-title {
+    margin-bottom: 0.2rem;
+}
+
+.degree-text {
+    margin: 0rem 0rem 0.75rem 0rem;
+}
+
+.education-short {
+    font-size: 0.75rem;
+    margin: 0.5rem 0rem;
 }
 
 .link-and-icon {

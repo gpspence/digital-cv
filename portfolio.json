@@ -10,21 +10,54 @@
     },
     "summary": "George Spence - Data Engineer @ Hexegic | MChem(Hons)",
     "base_url": "None",
+    "technical_skills": [
+        {
+            "display_name": "Languages & Frameworks",
+            "skills": [
+                "Python",
+                "PySpark",
+                "SQL",
+                "TypeScript",
+                "React",
+                "HTML/CSS"
+            ]
+        },
+        {
+            "display_name": "Data & Tools",
+            "skills": [
+                "Palantir Foundry",
+                "Pandas",
+                "Matplotlib",
+                "Pytest",
+                "Jest",
+                "Git",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "display_name": "Concepts",
+            "skills": [
+                "ETL Pipelines",
+                "Data Modelling",
+                "REST APIs",
+                "Cloud Deployment"
+            ]
+        }
+    ],
     "work_experience": [
         {
             "company": "Hexegic",
             "positions": [
                 {
-                    "role": "Data Engineer",
-                    "skills": [],
+                    "role": "Data Engineer (Sub-team Lead)",
                     "start_date": "August 2024",
                     "end_date": "Present"
                 }
             ],
             "experiences": [
                 "Automated large-scale data ingestion pipelines using PySpark on Palantir Foundry, processing 100+ GB of structured and semi-structured data daily.",
-                "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentor junior engineers and lead code reviews to ensure best practices and maintain quality and consistency.",
-                "Built a custom Python ETL library to standardise ingestion of 15+ disparate data sources, with support for schema variation, config versioning, and custom data health checks.",
+                "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentored 5 junior engineers and lead code reviews across a 5-person team to ensure best practices and maintain quality and consistency.",
+                "Built a Python ETL library to standardise ingestion of 15+ disparate data sources, with support for schema changes via config versioning and data health checks.",
                 "Led recovery of a challenging project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence.",
                 "Modelled complex relational ontologies to represent real-world data relationships and enable cross-domain analytics.",
                 "Developed responsive operational dashboards using TypeScript within Palantir Foundry, delivering real-time insights for decision-making."
@@ -34,8 +67,7 @@
             "company": "Defence Science and Technology Laboratories - MOD",
             "positions": [
                 {
-                    "role": "Scientist (Promoted to Senior Scientist)",
-                    "skills": [],
+                    "role": "Scientist – Senior Scientist",
                     "start_date": "June 2022",
                     "end_date": "July 2024"
                 }
@@ -43,8 +75,7 @@
             "experiences": [
                 "Developed data acquisition and HMI/SCADA systems in DAQFactory, leveraging Python (Pandas, Matplotlib) to characterise chemical sensors for UK MOD procurement.",
                 "Managed an international collaboration with a US research lab to evaluate chemical sensor performance for UK MOD procurement.",
-                "Supported robotics and autonomy research, including data analysis for large scale trials, presenting at workshops, and drafting funding proposals.",
-                "Delivered technical training to stakeholders, simplifying complex topics for diverse audiences."
+                "Supported robotics and autonomy research, including data analysis for large scale trials, presenting at workshops, and drafting funding proposals."
             ]
         },
         {
@@ -52,23 +83,30 @@
             "positions": [
                 {
                     "role": "Technical Assistant",
-                    "skills": [],
                     "start_date": "July 2019",
                     "end_date": "June 2020"
                 }
             ],
             "experiences": [
-                "Conducted chemical synthesis and analysis (HPLC, NMR) for pharmaceutical research projects, directly contributing to a 50-fold increase in biochemical potency of a novel antibiotic drug candidate."
+                "Conducted chemical synthesis for pharmaceutical research projects, contributing to a 50-fold increase in biochemical potency of a novel antibiotic drug candidate."
             ]
         }
     ],
     "projects": [
         {
             "name": "Recipe Manager (Full-Stack App)",
+            "link": "",
             "points": [
                 "Full-stack: React (Vite) + Supabase/ PostgreSQL",
                 "Features: Auth, CRUD, API integration",
                 "Deployed via Vercel"
+            ]
+        },
+        {
+            "name": "This CV (HTML, CSS, Python)",
+            "link": "",
+            "points": [
+                "Templated with Jinja2 and styled with HTML/CSS"
             ]
         }
     ],
