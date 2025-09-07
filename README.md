@@ -1,10 +1,10 @@
 # digital-cv
 
-A modern, web-based digital CV to showcase your professional background, skills, and projects.
+A modern, web-based digital CV to showcase professional background, skills, and projects.
 
 ## 🌟 Features
 
-- **Attractive design:** Present your CV with clean, responsive HTML and CSS.
+- **Attractive design:** CVs presented with clean, responsive HTML and CSS.
 - **Easy customization:** All content is editable via simple markup—no frameworks required.
 - **Portable:** Works locally or can be hosted anywhere (GitHub Pages, Netlify, etc.).
 - **Printable:** Optimized for both screen and print (PDF export via browser print).
@@ -13,10 +13,11 @@ A modern, web-based digital CV to showcase your professional background, skills,
 
 ```
 digital-cv/
-├── index.html         # Main CV page
-├── portfolio.json     # CV content
-├── css/               # Custom styles
-├── img/               # Images
+├── index.html             # Main CV
+├── generate_portfolio.py  # Python script to generate CV from template
+├── portfolio.json         # CV content
+├── css/                   # Custom styles
+├── img/                   # Images
 ├── README.md
 ```
 
@@ -30,21 +31,19 @@ digital-cv/
 
 2. **Open `index.html` in your browser** to view the CV.
 
-3. **Edit `portfolio.json`, `index.html` and `style.css`** to add your details and personalize the look.
+3. **Edit `portfolio.json`, `index.html` and `style.css`** to add details and personalize the look.
 
 ## 🛠️ Customization Tips
 
-- Update your personal information, work experience, skills, and projects in `index.html`.
-- Tweak colors, fonts, and layout in `style.css`.
-- Add scripts in the `scripts/` folder if you want custom automation or data (optional).
+- Update personal information, work experience, skills, and projects in `portfolio.json`.
+- Tweak colors, fonts, and layout in `main.css`.
 - Place photos or icons in the `images/` folder and reference them in your HTML.
 
 ## 💡 Deployment
 
 - **GitHub Pages:**  
-  1. Push your changes to the `gh-pages` branch.
-  2. In repository settings, enable Pages for the `gh-pages` branch.
-  3. Visit `https://gpspence.github.io/digital-cv/` to see your live CV.
+  1. In repository settings, enable Pages for your main branch.
+  2. Visit `https://gpspence.github.io/digital-cv/` to see your live CV.
 
 - **Other hosts:**  
   Upload the files to your preferred web host or serve locally.
