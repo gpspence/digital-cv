@@ -9,7 +9,7 @@ with Path("portfolio.json").open(encoding="utf-8") as f:
 
 # Set up Jinja environment
 env = Environment(loader=FileSystemLoader("."), autoescape=True)
-index_template = env.get_template("index.html")
+index_template = env.get_template("index_template.html")
 
 # Render the template with the data
 html_output = index_template.render(**data)

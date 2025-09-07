@@ -14,11 +14,13 @@ A modern, web-based digital CV to showcase professional background, skills, and 
 ```
 digital-cv/
 ├── index.html             # Main CV
+├── index_template.html    # CV template
 ├── generate_portfolio.py  # Python script to generate CV from template
 ├── portfolio.json         # CV content
 ├── css/                   # Custom styles
 ├── img/                   # Images
 ├── README.md
+├── LICENSE.txt
 ```
 
 ## 🚀 Getting Started
@@ -31,18 +33,20 @@ digital-cv/
 
 2. **Open `index.html` in your browser** to view the CV.
 
-3. **Edit `portfolio.json`, `index.html` and `style.css`** to add details and personalize the look.
+3. **Edit `portfolio.json`, `index_template.html` and `style.css`** to add details and personalize the look.
+
+4. **Run `generate_portfolio.py`** to update index.html with the latest data and styling.
 
 ## 🛠️ Customization Tips
 
 - Update personal information, work experience, skills, and projects in `portfolio.json`.
-- Tweak colors, fonts, and layout in `main.css`.
+- Tweak colors, fonts, and layout in `css/main.css`.
 - Place photos or icons in the `images/` folder and reference them in your HTML.
 
 ## 💡 Deployment
 
 - **GitHub Pages:**  
-  1. In repository settings, enable Pages for your main branch.
+  1. In repository settings, enable Pages for your selected branch.
   2. Visit `https://gpspence.github.io/digital-cv/` to see your live CV.
 
 - **Other hosts:**  
