@@ -16,7 +16,7 @@ digital-cv/
 ├── index.html             # Main CV
 ├── index_template.html    # CV template
 ├── generate_portfolio.py  # Python script to generate CV from template
-├── portfolio.json         # CV content
+├── portfolio.json         # Content to fill into template 
 ├── css/                   # Custom styles
 ├── img/                   # Images
 ├── README.md
