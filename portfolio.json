@@ -40,7 +40,8 @@
                 "ETL Pipelines",
                 "Data Modelling",
                 "REST APIs",
-                "Cloud Deployment"
+                "Cloud Deployment",
+                "AI/ML"
             ]
         }
     ],
@@ -55,12 +56,12 @@
                 }
             ],
             "experiences": [
-                "Automated large-scale data ingestion pipelines using PySpark on Palantir Foundry, processing 100+ GB of structured and semi-structured data daily.",
                 "Promoted to sub-team lead after 6 months for delivering high-impact data-engineering solutions; mentored 5 junior engineers and led code reviews across a 5-person team to ensure best practices and maintain quality and consistency.",
+                "Automated large-scale data ingestion pipelines using PySpark on Palantir Foundry, processing 100+ GB of structured and semi-structured data daily.",
                 "Built a Python ETL library to standardise ingestion of 15+ disparate data sources, with support for schema changes via config versioning and data health checks.",
-                "Led recovery of a challenging project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence.",
                 "Modelled complex relational ontologies to represent real-world data relationships and enable cross-domain analytics.",
-                "Developed responsive operational dashboards using TypeScript within Palantir Foundry, delivering real-time insights for decision-making."
+                "Developed responsive operational dashboards using TypeScript within Palantir Foundry, delivering real-time insights for decision-making.",
+                "Led the recovery of a challenging project ahead of contract review, resolving frontend and ontology issues and restoring stakeholder confidence."
             ]
         },
         {
@@ -74,8 +75,8 @@
             ],
             "experiences": [
                 "Developed data acquisition and HMI/SCADA systems in DAQFactory, leveraging Python (Pandas, Matplotlib) to characterise chemical sensors.",
-                "Managed an international collaboration with a US research lab to evaluate chemical sensor performance for UK MOD procurement.",
-                "Supported robotics and autonomy research, including data analysis for large scale trials, presenting at workshops, and drafting funding proposals."
+                "Managed international collaboration with a US research lab to evaluate chemical sensor performance for UK MOD procurement.",
+                "Facilitated robotics and autonomy research, including conducting data analysis for large scale trials, presenting at workshops, and drafting funding proposals."
             ]
         },
         {
